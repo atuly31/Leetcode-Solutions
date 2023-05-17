@@ -5,11 +5,16 @@ public:
     
     
         for(int i =0;i<nums.size();i++){
-            if(nums[i]>0)
+            if(nums[i]==0)
+            {
+                continue;
+            }
+            else if(nums[i]>0)
             {
                 p++;
                 }
-            else if(nums[i]<0) {
+            else
+            {
                 n++;
                 }
         }
