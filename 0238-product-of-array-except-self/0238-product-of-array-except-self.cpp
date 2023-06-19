@@ -1,7 +1,7 @@
 class Solution {
 public:
     vector<int> productExceptSelf(vector<int>& nums) {
-        int n=nums.size();
+       // int n=nums.size();
      vector<int>ans;
     int k,c=0;
     int mul=1;
