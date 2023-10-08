@@ -30,10 +30,9 @@ public:
           prev=prev->next;
             i++;
         }
-         ListNode* curr =prev->next;
-         prev->next=curr->next;
-         curr->next=NULL;
-          delete curr;
+         
+         prev->next=prev->next->next;
+        
           return head;
         
     }
