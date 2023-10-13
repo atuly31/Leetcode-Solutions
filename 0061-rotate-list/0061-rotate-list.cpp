@@ -22,9 +22,9 @@ public:
             len++;
         }
         temp->next = head;
-       if (k%=len){
+        if (k%=len)
         for(int i=0;i<len-k;i++) temp = temp->next;
-       }
+       
         curr = temp->next;
         temp->next = NULL;
         return curr;
