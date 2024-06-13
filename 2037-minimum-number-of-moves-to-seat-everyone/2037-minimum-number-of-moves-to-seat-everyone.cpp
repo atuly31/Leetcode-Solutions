@@ -1,15 +1,12 @@
 class Solution {
 public:
-    int minMovesToSeat(vector<int>& seats, vector<int>& students) 
-    {
-        sort(seats.begin(),seats.end());
-        sort(students.begin(),students.end());
-        int sum =0;
-        for(int i=0;i<seats.size();i++)
-        {
-            int diff = abs(seats[i]-students[i]);
-            sum+=diff;
+    int minMovesToSeat(vector<int>& seats, vector<int>& students) {
+        int c =0;
+      sort(seats.begin(),seats.end()); 
+      sort(students.begin(),students.end());  
+        for(int i=0;i<seats.size();i++){
+          c=c+(abs(seats[i]-students[i]));  
         }
-        return sum;
+      return c;
     }
 };
