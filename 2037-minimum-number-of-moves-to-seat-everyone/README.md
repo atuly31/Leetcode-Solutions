@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/minimum-number-of-moves-to-seat-everyone/">2037. Minimum Number of Moves to Seat Everyone</a></h2><h3>Easy</h3><hr><div><p>There are <code>n</code> seats and <code>n</code> students in a room. You are given an array <code>seats</code> of length <code>n</code>, where <code>seats[i]</code> is the position of the <code>i<sup>th</sup></code> seat. You are also given the array <code>students</code> of length <code>n</code>, where <code>students[j]</code> is the position of the <code>j<sup>th</sup></code> student.</p>
+<h2><a href="https://leetcode.com/problems/minimum-number-of-moves-to-seat-everyone">2037. Minimum Number of Moves to Seat Everyone</a></h2><h3>Easy</h3><hr><p>There are <code>n</code> seats and <code>n</code> students in a room. You are given an array <code>seats</code> of length <code>n</code>, where <code>seats[i]</code> is the position of the <code>i<sup>th</sup></code> seat. You are also given the array <code>students</code> of length <code>n</code>, where <code>students[j]</code> is the position of the <code>j<sup>th</sup></code> student.</p>
 
 <p>You may perform the following move any number of times:</p>
 
@@ -13,7 +13,8 @@
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
 
-<pre><strong>Input:</strong> seats = [3,1,5], students = [2,7,4]
+<pre>
+<strong>Input:</strong> seats = [3,1,5], students = [2,7,4]
 <strong>Output:</strong> 4
 <strong>Explanation:</strong> The students are moved as follows:
 - The first student is moved from from position 2 to position 1 using 1 move.
@@ -24,7 +25,8 @@ In total, 1 + 2 + 1 = 4 moves were used.
 
 <p><strong class="example">Example 2:</strong></p>
 
-<pre><strong>Input:</strong> seats = [4,1,5,9], students = [1,3,2,6]
+<pre>
+<strong>Input:</strong> seats = [4,1,5,9], students = [1,3,2,6]
 <strong>Output:</strong> 7
 <strong>Explanation:</strong> The students are moved as follows:
 - The first student is not moved.
@@ -36,7 +38,8 @@ In total, 0 + 1 + 3 + 3 = 7 moves were used.
 
 <p><strong class="example">Example 3:</strong></p>
 
-<pre><strong>Input:</strong> seats = [2,2,6,6], students = [1,3,2,6]
+<pre>
+<strong>Input:</strong> seats = [2,2,6,6], students = [1,3,2,6]
 <strong>Output:</strong> 4
 <strong>Explanation:</strong> Note that there are two seats at position 2 and two seats at position 6.
 The students are moved as follows:
@@ -55,4 +58,3 @@ In total, 1 + 3 + 0 + 0 = 4 moves were used.
 	<li><code>1 &lt;= n &lt;= 100</code></li>
 	<li><code>1 &lt;= seats[i], students[j] &lt;= 100</code></li>
 </ul>
-</div>
