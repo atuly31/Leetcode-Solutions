@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/minimum-operations-to-make-the-array-increasing/">1827. Minimum Operations to Make the Array Increasing</a></h2><h3>Easy</h3><hr><div><p>You are given an integer array <code>nums</code> (<strong>0-indexed</strong>). In one operation, you can choose an element of the array and increment it by <code>1</code>.</p>
+<h2><a href="https://leetcode.com/problems/minimum-operations-to-make-the-array-increasing">1827. Minimum Operations to Make the Array Increasing</a></h2><h3>Easy</h3><hr><p>You are given an integer array <code>nums</code> (<strong>0-indexed</strong>). In one operation, you can choose an element of the array and increment it by <code>1</code>.</p>
 
 <ul>
 	<li>For example, if <code>nums = [1,2,3]</code>, you can choose to increment <code>nums[1]</code> to make <code>nums = [1,<u><b>3</b></u>,3]</code>.</li>
@@ -11,7 +11,8 @@
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
 
-<pre><strong>Input:</strong> nums = [1,1,1]
+<pre>
+<strong>Input:</strong> nums = [1,1,1]
 <strong>Output:</strong> 3
 <strong>Explanation:</strong> You can do the following operations:
 1) Increment nums[2], so nums becomes [1,1,<u><strong>2</strong></u>].
@@ -21,13 +22,15 @@
 
 <p><strong class="example">Example 2:</strong></p>
 
-<pre><strong>Input:</strong> nums = [1,5,2,4,1]
+<pre>
+<strong>Input:</strong> nums = [1,5,2,4,1]
 <strong>Output:</strong> 14
 </pre>
 
 <p><strong class="example">Example 3:</strong></p>
 
-<pre><strong>Input:</strong> nums = [8]
+<pre>
+<strong>Input:</strong> nums = [8]
 <strong>Output:</strong> 0
 </pre>
 
@@ -37,4 +40,4 @@
 <ul>
 	<li><code>1 &lt;= nums.length &lt;= 5000</code></li>
 	<li><code>1 &lt;= nums[i] &lt;= 10<sup>4</sup></code></li>
-</ul></div>
+</ul>
