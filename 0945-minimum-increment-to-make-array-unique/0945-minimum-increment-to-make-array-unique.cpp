@@ -9,7 +9,7 @@ public:
             if(nums[i]<nums[i+1]) continue;
             else 
             {
-                c=+ (nums[i]+1) - nums[i+1];
+                c+= (nums[i]+1) - nums[i+1];
                 nums[i+1] = nums[i]+1;
             }
         }
