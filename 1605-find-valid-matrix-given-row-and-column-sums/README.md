@@ -1,13 +1,14 @@
-<h2><a href="https://leetcode.com/problems/find-valid-matrix-given-row-and-column-sums/">1605. Find Valid Matrix Given Row and Column Sums</a></h2><h3>Medium</h3><hr><div><p>You are given two arrays <code>rowSum</code> and <code>colSum</code> of non-negative integers where <code>rowSum[i]</code> is the sum of the elements in the <code>i<sup>th</sup></code> row and <code>colSum[j]</code> is the sum of the elements of the <code>j<sup>th</sup></code> column of a 2D matrix. In other words, you do not know the elements of the matrix, but you do know the sums of each row and column.</p>
+<h2><a href="https://leetcode.com/problems/find-valid-matrix-given-row-and-column-sums/">1605. Find Valid Matrix Given Row and Column Sums</a></h2><h3>Medium</h3><hr><p>You are given two arrays <code>rowSum</code> and <code>colSum</code> of non-negative integers where <code>rowSum[i]</code> is the sum of the elements in the <code>i<sup>th</sup></code> row and <code>colSum[j]</code> is the sum of the elements of the <code>j<sup>th</sup></code> column of a 2D matrix. In other words, you do not know the elements of the matrix, but you do know the sums of each row and column.</p>
 
 <p>Find any matrix of <strong>non-negative</strong> integers of size <code>rowSum.length x colSum.length</code> that satisfies the <code>rowSum</code> and <code>colSum</code> requirements.</p>
 
-<p>Return <em>a 2D array representing <strong>any</strong> matrix that fulfills the requirements</em>. It's guaranteed that <strong>at least one </strong>matrix that fulfills the requirements exists.</p>
+<p>Return <em>a 2D array representing <strong>any</strong> matrix that fulfills the requirements</em>. It&#39;s guaranteed that <strong>at least one </strong>matrix that fulfills the requirements exists.</p>
 
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
 
-<pre><strong>Input:</strong> rowSum = [3,8], colSum = [4,7]
+<pre>
+<strong>Input:</strong> rowSum = [3,8], colSum = [4,7]
 <strong>Output:</strong> [[3,0],
          [1,7]]
 <strong>Explanation:</strong> 
@@ -22,7 +23,8 @@ Another possible matrix is: [[1,2],
 
 <p><strong class="example">Example 2:</strong></p>
 
-<pre><strong>Input:</strong> rowSum = [5,7,10], colSum = [8,6,8]
+<pre>
+<strong>Input:</strong> rowSum = [5,7,10], colSum = [8,6,8]
 <strong>Output:</strong> [[0,5,0],
          [6,1,0],
          [2,0,8]]
@@ -36,4 +38,3 @@ Another possible matrix is: [[1,2],
 	<li><code>0 &lt;= rowSum[i], colSum[i] &lt;= 10<sup>8</sup></code></li>
 	<li><code>sum(rowSum) == sum(colSum)</code></li>
 </ul>
-</div>
