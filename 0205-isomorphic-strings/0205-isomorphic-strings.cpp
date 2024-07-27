@@ -1,19 +1,22 @@
 class Solution {
 public:
-    bool isIsomorphic(string s, string t) {
-      int hash[256]={0};
-      bool ischarmapped[256]={0};
-      for(int i=0;i<s.size();i++){
-          if(hash[s[i]]==0&& ischarmapped[t[i]]==0){
-              hash[s[i]]=t[i];
-              ischarmapped[t[i]]=true;
-          }
+    bool isIsomorphic(string s, string t) 
+    {
+      int s_hash [256] ={0};
+      int t_hash[256]={0};
+      for(int i=0;i<s.size();i++)
+      {
+        if(s_hash[s[i]]==0 && t_hash[t[i]]==0)
+        {
+            s_hash[s[i]]=t[i];
+            t_hash[t[i]]=1;
+        }
       }
-       for(int i=0;i<s.size();i++){
-           if(char(hash[s[i]])!=t[i]){
-               return false;
-           }
-       }
-        return true;
+      for(int i=0;i<s.size();i++)
+      {
+        if(s_hash[s[i]]!=t[i]) return false;
+      }
+      return true;
+
     }
 };
