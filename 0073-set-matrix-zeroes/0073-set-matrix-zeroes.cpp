@@ -1,23 +1,23 @@
 class Solution {
 public:
     void setZeroes(vector<vector<int>>& mat) {
-        vector<pair<int,int>>p;
+        vector<pair<int,int>>pq;
         int n = mat.size();
         int m = mat[0].size();
         for(int i=0;i<n;i++)
         {
             for(int j=0;j<m;j++)
             {
-                if(mat[i][j]==0) p.push_back({i,j});
-                else continue;
+                if(mat[i][j]==0) pq.push_back({i,j});
             }
         }
-        for(auto i:p)
+        for(auto i:pq)
         {
-            int row =i.first;
-            int col = i.second;
-            fill(mat[row].begin(),mat[row].end(),0);
-            for(int i=0;i<n;i++) mat[i][col]=0;
+            fill(mat[i.first].begin(),mat[i.first].end(),0);
+            for(int j =0;j<n;j++) 
+            {
+                mat[j][i.second]=0;
+            }
         }
     }
 };
