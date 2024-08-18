@@ -10,7 +10,7 @@
  */
 class Solution {
 public:
-  ListNode* reverse(ListNode* head)
+  ListNode *reverse(ListNode* head)
   {
       ListNode dummy = NULL;
       ListNode* prev;
@@ -24,9 +24,11 @@ public:
       } 
       
       return prev;
+    
   }
  
     bool isPalindrome(ListNode* head) {
+        
         ListNode*rev = reverse(head);
         
         
