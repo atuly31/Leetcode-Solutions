@@ -1,21 +1,20 @@
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
-        ios::sync_with_stdio(false);
-        cin.tie(NULL);
-        cout.tie(NULL);
-        
-        unordered_map<int,int>mp;
-        for(int i=0;i<nums.size();i++) mp[nums[i]]=i;
-
-        for(int i=0;i<nums.size();i++) 
+        map<int,int>mp;
+        for(int i=0;i<nums.size();i++)
         {
-            int val = target-nums[i];
-            if(mp.find(val)!=mp.end())
-            {
-                if(i!=mp[val]) return {i,mp[val]};
-            }
+            mp[nums[i]]=i;
         }
-          return {};
+        int a=0,b=0;
+        for(int i=0;i<nums.size();i++)
+        {
+           int diff = target - nums[i];
+          if( mp.find(diff)!=mp.end())
+          {
+              if(i!=mp[diff]) return {i,mp[diff]};
+          }
+        }
+        return {};
     }
 };
