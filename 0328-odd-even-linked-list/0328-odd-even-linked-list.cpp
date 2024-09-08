@@ -10,7 +10,15 @@
  */
 class Solution {
 public:
-     
+     int getlen(ListNode* head){
+         int len =0;
+         ListNode* temp = head;
+         while(temp){
+             temp = temp->next;
+             len++;
+         }
+         return len;
+     }
     ListNode* oddEvenList(ListNode* head) {
         ListNode* dummy = new ListNode(0);
         ListNode* dummy1 = new ListNode(0);
