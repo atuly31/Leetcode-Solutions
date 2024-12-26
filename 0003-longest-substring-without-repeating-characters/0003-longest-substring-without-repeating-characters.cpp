@@ -1,26 +1,22 @@
 class Solution {
 public:
     int lengthOfLongestSubstring(string s) {
-    vector<int> hash (256,-1);
-    int l =0 ,r=0,maxlen=0;
-  
-    while(r<s.size())
-    {
-        
-        if(hash[s[r]]!=-1 )
-        {
-           l = max(hash[s[r]]+1,l); 
-           
-        }
-      
-        hash[s[r]]=r;
-        
        
-        
-        maxlen = max(maxlen,r-l+1);
-        
-        r++;
-    }
-    return maxlen;
+        int maxlen=0;
+        if(s.size()==0) return 0;
+        cout<<s.size();
+        for(int i=0;i<=s.size()-1;i++)
+         {
+             vector<int>hash(256,-1);
+            for(int j=i;j<=s.size()-1;j++)
+            {
+                if(hash[s[j]]==-1){
+                    hash[s[j]]++;
+                    maxlen = max(maxlen,j-i+1);
+                }
+                else break;
+            }
+         }
+         return maxlen;
     }
 };
